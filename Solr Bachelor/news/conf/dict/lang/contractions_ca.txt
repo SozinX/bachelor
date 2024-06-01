@@ -1,0 +1,8 @@
+# Set of Catalan contractions for ElisionFilter
+
+d
+l
+m
+n
+s
+t

@@ -1,0 +1,5 @@
+# Set of Irish hyphenations for StopFilter
+
+h
+n
+t

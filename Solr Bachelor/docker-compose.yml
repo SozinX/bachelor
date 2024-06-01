@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  solr.bachelor:
+    image: solr:8.9.0
+    hostname: solr-bachelor
+    container_name: solr-bachelor
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:8983"
+    logging:
+     options:
+      max-size: "10m"
+      max-file: "5"
+    environment:
+     - TZ=Europe/Kiev
+     - COMPOSE_PROJECT_NAME=prod
+    volumes:
+     - ./:/var/solr/data
